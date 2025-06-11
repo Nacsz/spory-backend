@@ -11,8 +11,8 @@ def facility_list(request):
             'lat': f.latitude,
             'lng': f.longitude,
             'description': f.description,
-            'open_time': str(f.open_time),      # ✅ 추가
-            'close_time': str(f.close_time),    # ✅ 추가
+            'open_time': str(f.open_time),      
+            'close_time': str(f.close_time),  
             'price': f.price,
         }
         for f in facilities
@@ -21,5 +21,5 @@ def facility_list(request):
         data,
         safe=False,
         json_dumps_params={'ensure_ascii': False},
-        content_type='application/json; charset=utf-8'  # ✅ 이 줄 추가
+        content_type='application/json; charset=utf-8'
     )

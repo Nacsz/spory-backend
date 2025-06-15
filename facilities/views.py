@@ -8,8 +8,8 @@ def facility_list(request):
         {
             'id': f.id,
             'name': f.name,
-            'lat': f.latitude,
-            'lng': f.longitude,
+            'lat': float(f.latitude),
+            'lng': float(f.longitude),
             'description': f.description,
             'open_time': str(f.open_time),      
             'close_time': str(f.close_time),  

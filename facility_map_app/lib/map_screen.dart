@@ -200,8 +200,8 @@ class _MapScreenState extends State<MapScreen> {
               ),
             ),
           Positioned(
-            bottom: 80, // 카드보다 위에
-            right: 16,
+            top: 10, // 카드보다 위에
+            left: 16,
             child: FloatingActionButton.extended(
               onPressed: _showFacilitiesInBounds,
               label: const Text("지도 내 시설 보기"),

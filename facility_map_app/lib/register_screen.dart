@@ -45,7 +45,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            TextField(controller: _emailController, decoration: const InputDecoration(labelText: '이메일')),
+            TextField(controller: _emailController, decoration: const InputDecoration(labelText: '아이디')),
             TextField(controller: _passwordController, decoration: const InputDecoration(labelText: '비밀번호'), obscureText: true),
             TextField(controller: _nameController, decoration: const InputDecoration(labelText: '이름')),
             const SizedBox(height: 20),
